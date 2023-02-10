@@ -42,7 +42,6 @@ After you're finished please remove all the comments and instructions!
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -91,7 +90,9 @@ After you're finished please remove all the comments and instructions!
 
 - **Ruby**:
 
-To install run(for Mac Os):
+### Install
+
+To install on Mac Os run following commands:
 
 ```sh
  brew install rbenv ruby-build
