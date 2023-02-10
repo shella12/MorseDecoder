@@ -1,21 +1,13 @@
-$morse_code = { A: '.-', B: '-...', C: '-.-.', D: '-..', E: '.', F: '..-.',
-                G: '--.', H: '....', I: '..', J: '.---', K: '-.-', L: '.-..',
-                M: '--', N: '-.', O: '---', P: '.--.', Q: '--.-', R: '.-.',
-                S: '...', T: '-', U: '..-', V: '...-', W: '.--', X: '-..-',
-                Y: '-.--', Z: '--..' }
-
 # character decoding method
 
 def decode_char(chr)
-  char = ''
+  morse_code = { A: '.-', B: '-...', C: '-.-.', D: '-..', E: '.', F: '..-.',
+                 G: '--.', H: '....', I: '..', J: '.---', K: '-.-', L: '.-..',
+                 M: '--', N: '-.', O: '---', P: '.--.', Q: '--.-', R: '.-.',
+                 S: '...', T: '-', U: '..-', V: '...-', W: '.--', X: '-..-',
+                 Y: '-.--', Z: '--..' }
 
-# $morse_code.each do 
-# 	|key,value| 
-# 	char = key.to_s if chr == value 
-# end
-	char = $morse_code.key(chr).to_s
-
-	char
+  morse_code.key(chr).to_s
 end
 
 decode_char('-...')
@@ -31,19 +23,18 @@ def decode_word(word)
   decoded_word
 end
 
-decode_word ("-- -.--")
-
+decode_word('-- -.--')
 
 # Messsage decoding method
 
 def decode_message(msg)
-	decoded_msg = ''
-	msg = msg.split('   ')
+  decoded_msg = ''
+  msg = msg.split('   ')
 
-	msg.each do |word|
-		decoded_msg += decode_word(word) + ' '
-	end
-	decoded_msg.strip
+  msg.each do |word|
+    decoded_msg += decode_word(word).concat('  ')
+  end
+  decoded_msg.strip
 end
 
-decode_message(".-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...")
+decode_message('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
