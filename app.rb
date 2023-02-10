@@ -4,6 +4,7 @@ M:"--", N:"-.", O:"---", P:".--.", Q:"--.-", R:".-.",
 S:"...", T:"-", U:"..-", V:"...-", W:".--", X:"-..-",
 Y:"-.--", Z:"--.."} 
 
+# character decoding method
 
 def decode_char (chr)
 char = ''
@@ -16,3 +17,17 @@ end
 end
 
 decode_char("-...")
+
+# Word decoding method
+
+def decode_word (word)
+	decoded_word = ''
+	word = word.split
+	word.each do 
+		|i|
+		decoded_word += decode_char(i)
+end
+	decoded_word
+end
+
+decode_word ("-- -.--")
