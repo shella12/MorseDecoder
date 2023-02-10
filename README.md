@@ -167,11 +167,6 @@ Thats it now you can execute your program on termonal:)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
-## 👥 Authors <a name="authors"></a>
-
-- GitHub: [@shella12](https://github.com/shella12)
-- Twitter: [@Ayesha Arshad](https://twitter.com/AyeshaA03712974)
-- LinkedIn: [Ayesha Arshad](https://www.linkedin.com/in/ayesha-arshad-a690a015a/)
 
 ## 🤝 Contributing <a name="contributing"></a>
 
